@@ -9,6 +9,6 @@ Game Rules Blackjack is a popular card game that is simple to play. The object o
 
 • Let the dealer draw additional cards until their hand exceeds 21 ("busted").
 
-**Link to play**: https://blackjack1000.netlify.app
+**Link to play**: https://cpsc-8710-teamproject.github.io/BlackJackGame/
 
 ![Blackjack-card-values](https://user-images.githubusercontent.com/76790227/147416588-86b629f5-212d-4019-a412-82088b4cf690.png)
