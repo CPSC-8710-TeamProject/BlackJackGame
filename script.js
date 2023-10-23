@@ -54,3 +54,34 @@ function showScore(activeplayer){
         document.querySelector(activeplayer['scoreSpan']).textContent = activeplayer['score'];
     }
 }
+
+// Hit Button (starting)
+document.querySelector('#hit').addEventListener('click', BJhit);
+
+const hitsound = new Audio('./static/sounds/swish.m4a');
+
+function BJhit(){
+    if(Dealer['score'] === 0){
+        if(You['score']<=21){
+            drawCard(You);
+        }
+    }
+}
+
+// Dealer's Logic (2nd player) OR Stand button
+document.querySelector('#stand').addEventListener('click', BJstand)
+
+function BJstand(){
+    if(You['score']===0){
+        alert('Please Hit Some Cards First!');
+    }
+    else{
+        while(Dealer['score']<16){
+            drawCard(Dealer);
+        }
+        setTimeout(function(){
+            showresults(findwinner());
+            scoreboard();
+        }, 800); 
+    }
+}
