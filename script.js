@@ -149,3 +149,37 @@ function findwinner(){
     }
     return winner;
 }
+
+// Results
+const winSound = new Audio('./static/sounds/cash.mp3'); 
+const cheers = new Audio('./static/sounds/cheer.wav');
+const loseSound = new Audio('./static/sounds/aww.mp3');
+const drawSound = new Audio('./static/sounds/ohh.mp3');
+
+function showresults(winner){
+    if(winner == You){
+        document.querySelector('#command').textContent = 'You Won!';
+        document.querySelector('#command').style.color = 'green';
+        winSound.play();
+        cheers.play();
+        cheers.volume = 0.4;
+    }
+    else if(winner == Dealer){
+        document.querySelector('#command').textContent = "You Lost!";
+        document.querySelector('#command').style.color = 'red';
+        loseSound.play();
+    }
+    else{
+        document.querySelector('#command').textContent = 'You Drew!';
+        document.querySelector('#command').style.color = 'orange';
+        drawSound.play();
+    }
+
+}
+
+// Scoreboard
+function scoreboard(){
+    document.querySelector('#wins').textContent = BJgame['wins'];
+    document.querySelector('#losses').textContent = BJgame['losses'];
+    document.querySelector('#draws').textContent = BJgame['draws'];
+}
