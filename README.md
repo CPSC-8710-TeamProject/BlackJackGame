@@ -19,10 +19,14 @@ The objective of the game is to beat the dealer in one of the following ways:
 _Card Values:_
 
 • Number cards (2-10) are worth their face value.
+
 • Face cards (Kings, Queens, and Jacks) are worth 10 points each.
+
 • Aces can be worth 1 point or 11 points, depending on which value benefits the player more.
 
 _Winning Conditions:_
 
 • If a player is dealt a hand with a total value of 21 using two cards (an Ace and a 10-value card), they achieve a "blackjack" and typically win 1.5 times their original bet, unless the dealer also has a blackjack.
+
 • If neither the player nor the dealer has a blackjack, the player wins if their hand's total value is closer to 21 than the dealer's hand without going over 21.
+
