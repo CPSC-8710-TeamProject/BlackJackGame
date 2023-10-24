@@ -122,3 +122,30 @@ function BJdeal(){
     document.querySelector('#command').style.color = 'black';
     }
 }
+
+// Compute Winner Function
+function findwinner(){
+    let winner;
+
+    if(You['score']<=21){
+        if(Dealer['score']<You['score'] || Dealer['score']>21){
+            BJgame['wins']++;
+            winner = You;
+        }
+        else if(Dealer['score'] == You['score']){
+            BJgame['draws']++;
+        }
+        else{
+            BJgame['losses']++;
+            winner = Dealer;
+        }
+    }
+    else if(You['score']>21 && Dealer['score']<=21){
+        BJgame['losses']++;
+        winner = Dealer;
+    }
+    else if(You['score']>21 && Dealer['score']>21){
+        BJgame['draws']++;
+    }
+    return winner;
+}
