@@ -12,6 +12,7 @@ let BJgame = {
 };
 const You = BJgame['you'];
 const Dealer = BJgame['dealer'];
+const tink = new Audio('./static/sounds/tink.wav');
 
 function drawCard(activeplayer) {
     const randomNumber = Math.floor(Math.random() * (BJgame['cards'].length));
