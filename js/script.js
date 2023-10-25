@@ -28,12 +28,12 @@ function closeNamePopup() {
 }
 
 function showIndexPage() {
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
 }
 function submitName() {
     userName = nameInput.value;
     if (userName) {
-        window.location.href = "home.html";
+        window.location.href = "html/home.html";
         namePopupContainer.style.display = "none";
     }
 }
