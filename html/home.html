@@ -9,9 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oooh+Baby&family=Pushster&family=Teko&family=Ubuntu:ital@1&family=Vujahday+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/landing_styles.css">
     <title>Black Jack</title>
+    <script>
+        // Check if the page is being refreshed
+        if (performance.navigation.type === 1) {
+            window.location.href = 'index.html';
+        }
+        </script>
+        
 </head>
 <body>
+    <button id="reset-button" class="landing_button" onclick="showIndexPage()">Reset</button>
     <h1 class="title">BLACK JACK</h1>
     <div class="main">
         <h2><span id="command">Let's Play</span></h2>

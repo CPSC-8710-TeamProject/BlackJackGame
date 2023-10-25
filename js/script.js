@@ -27,12 +27,14 @@ function closeNamePopup() {
     namePopupContainer.style.display = "none";
 }
 
+function showIndexPage() {
+    window.location.href = "index.html";
+}
 function submitName() {
     userName = nameInput.value;
     if (userName) {
-        alert(`Welcome, ${userName}!`);
-        namePopupContainer.style.display = "none";
         window.location.href = "home.html";
+        namePopupContainer.style.display = "none";
     }
 }
 
