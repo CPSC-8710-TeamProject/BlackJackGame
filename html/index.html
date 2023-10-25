@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="../css/landing_styles.css">
+</head>
+<body>
+    <div class="landing-page">
+        <div class="center">
+            <div class="content">
+                <h1>
+                    <img src="../static/clubs.svg" style="width: 0.7em" /><img src="../static/diamonds.svg" style="width: 0.7em" />
+                    Blackjack
+                    <img src="../static/hearts.svg" style="width: 0.7em" /><img src="../static/spades.svg" style="width: 0.7em" />
+                </h1>
+            </div>
+        <button id="home_button" class="landing_button" onclick="showNamePopup()" >Play Now</button>
+        <div id="namePopupContainer" class="name-popup-container">
+            <div class="name-popup">
+                <span>Enter your name:</span>
+                <input type="text" id="nameInput">
+                <button id="submitButton" onclick="submitName()">Submit</button>
+                <span class="close-button" id="closeButton" onclick="closeNamePopup()">&times;</span>
+            </div>
+        </div>
+        <button id="showRulesButton" class="landing_button" onclick="showRules()" >Rules</button>
+        <div class="popup-container" id="popupContainer">
+            <div class="popup-content">
+                <span class="close-button" id="closeButton" onclick="closePopup()">&times;</span>
+                <h2>Game Rules</h2>
+                <p>
+                    Add rules here
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/script.js"></script>
+</body>
+</html>
