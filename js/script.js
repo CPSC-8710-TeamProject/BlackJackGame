@@ -12,13 +12,44 @@ let BJgame = {
 };
 const You = BJgame['you'];
 const Dealer = BJgame['dealer'];
-const tink = new Audio('./static/sounds/tink.wav');
+const tink = new Audio('../static/sounds/tink.wav');
 
+const popupContainer = document.getElementById("popupContainer");
+const namePopupContainer = document.getElementById("namePopupContainer");
+const nameInput = document.getElementById("nameInput");
+let userName = ""
+
+function showNamePopup() {
+    namePopupContainer.style.display = "block";
+}
+
+function closeNamePopup() {
+    namePopupContainer.style.display = "none";
+}
+
+function showIndexPage() {
+    window.location.href = "index.html";
+}
+function submitName() {
+    userName = nameInput.value;
+    if (userName) {
+        window.location.href = "home.html";
+        namePopupContainer.style.display = "none";
+    }
+}
+
+function showRules() {
+    popupContainer.style.display = "block";
+}
+
+function closePopup() {
+    popupContainer.style.display = "none";
+}
 function drawCard(activeplayer) {
     const randomNumber = Math.floor(Math.random() * (BJgame['cards'].length));
     const currentCard = BJgame['cards'].splice(randomNumber, 1);
     let card = document.createElement('img');
-    card.src = `./static/${currentCard}.png`;
+    card.src = `../static/${currentCard}.png`;
     document.querySelector(activeplayer['div']).appendChild(card);
     hitsound.play();
     
@@ -59,7 +90,7 @@ function showScore(activeplayer){
 // Hit Button (starting)
 document.querySelector('#hit').addEventListener('click', BJhit);
 
-const hitsound = new Audio('./static/sounds/swish.m4a');
+const hitsound = new Audio('../static/sounds/swish.m4a');
 
 function BJhit(){
     if(Dealer['score'] === 0){
@@ -152,10 +183,10 @@ function findwinner(){
 }
 
 // Results
-const winSound = new Audio('./static/sounds/cash.mp3'); 
-const cheers = new Audio('./static/sounds/cheer.wav');
-const loseSound = new Audio('./static/sounds/aww.mp3');
-const drawSound = new Audio('./static/sounds/ohh.mp3');
+const winSound = new Audio('../static/sounds/cash.mp3'); 
+const cheers = new Audio('../static/sounds/cheer.wav');
+const loseSound = new Audio('../static/sounds/aww.mp3');
+const drawSound = new Audio('../static/sounds/ohh.mp3');
 
 function showresults(winner){
     if(winner == You){

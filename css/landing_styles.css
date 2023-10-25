@@ -1,0 +1,117 @@
+/* Reset some default styles */
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the background */
+.landing-page {
+    background-image: url('/static/table.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center the content */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style the content */
+.content {
+    background-color: rgba(5, 36, 19, 0.9);
+    color: #f4f4f4;
+    text-align: center;
+    font-size: 130%;
+    font-family: Garamond, Times, "Times New Roman", serif;
+    font-weight: 200;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 3em;
+    color: #fff;
+}
+
+.landing_button {
+    display: block;
+    padding: 10px 20px;
+    background-color: rgba(255, 251, 0, 0.9);
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+}
+
+.landing_button:hover {
+    background-color: #a4a700;
+}
+
+/* styles.css */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    text-align: center;
+}
+
+.popup-content {
+    background-color: white;
+    width: 80%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    color: red;
+}
+
+.name-popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.name-popup {
+    display: flex; /* Add this */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
