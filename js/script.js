@@ -12,7 +12,7 @@ let BJgame = {
 };
 const You = BJgame['you'];
 const Dealer = BJgame['dealer'];
-const tink = new Audio('static/sounds/tink.wav');
+const tink = new Audio('../static/sounds/tink.wav');
 
 const popupContainer = document.getElementById("popupContainer");
 const namePopupContainer = document.getElementById("namePopupContainer");
