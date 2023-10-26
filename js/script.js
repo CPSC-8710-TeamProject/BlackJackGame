@@ -19,24 +19,25 @@ const namePopupContainer = document.getElementById("namePopupContainer");
 const nameInput = document.getElementById("nameInput");
 let userName = ""
 
-function showNamePopup() {
-    namePopupContainer.style.display = "block";
+function enterTheGame() {
+    window.location.href = "html/home.html";
+    // namePopupContainer.style.display = "block";
 }
 
-function closeNamePopup() {
-    namePopupContainer.style.display = "none";
-}
+// function closeNamePopup() {
+//     namePopupContainer.style.display = "none";
+// }
 
 function showIndexPage() {
     window.location.href = "../index.html";
 }
-function submitName() {
-    userName = nameInput.value;
-    if (userName) {
-        window.location.href = "html/home.html";
-        namePopupContainer.style.display = "none";
-    }
-}
+// function submitName() {
+//     userName = nameInput.value;
+//     if (userName) {
+//         window.location.href = "html/home.html";
+//         namePopupContainer.style.display = "none";
+//     }
+// }
 
 function showRules() {
     popupContainer.style.display = "block";
