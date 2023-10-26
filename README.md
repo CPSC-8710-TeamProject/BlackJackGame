@@ -30,6 +30,14 @@ _Winning Conditions:_
 
 • If neither the player nor the dealer has a blackjack, the player wins if their hand's total value is closer to 21 than the dealer's hand without going over 21.
 
+### Tech Stack
+
+• JavaScript
+
+• HTML
+
+• CSS
+
 # Setup and Deployment Instructions
 
 We have made the Black Jack game as easy to play as a few simple clicks! All you need is:
