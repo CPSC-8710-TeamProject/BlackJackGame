@@ -70,3 +70,7 @@ Big shoutout to [Clever Programmer](https://www.youtube.com/@CleverProgrammer) f
 ### Contact Info
 
 If you have any questions or need support, don’t hesitate to reach out to us at shaurya1096@gmail.com, snahar@clemson.edu, or  gpuligu@clemson.edu.
+
+# Reflection
+
+[Here is the reflection document](https://docs.google.com/document/d/1Frjcdb1HpbkpLy_skx5AEH-BRYKrnzZhQcF1JYIB5uE/edit?usp=sharing) in which we highlight how we met the goals for our CPSC 8710: Foundations of Software Engineering project. We also reflect on the challenges faced, what worked, what didn't, and lessons learned.
