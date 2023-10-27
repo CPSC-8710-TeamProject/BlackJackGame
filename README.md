@@ -1,4 +1,7 @@
-#### Link to play: https://cpsc-8710-teamproject.github.io/BlackJackGame/
+# Gameplay
+
+### [Click here to start playing!](https://cpsc-8710-teamproject.github.io/BlackJackGame/) <img src="https://github.com/CPSC-8710-TeamProject/BlackJackGame/assets/112566627/81c826a0-ebd5-4d9c-b61e-b84e32fd4f96" width="40" height="40">
+<br>
 
 ### Game Objective
 
