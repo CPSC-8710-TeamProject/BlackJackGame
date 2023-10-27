@@ -1,4 +1,4 @@
-# BlackJackGame
+#### Link to play: https://cpsc-8710-teamproject.github.io/BlackJackGame/
 
 ### Game Objective
 
@@ -9,8 +9,6 @@ The objective of the game is to beat the dealer in one of the following ways:
 • Reach a final score higher than the dealer without exceeding 21.
 
 • Let the dealer draw additional cards until their hand exceeds 21 ("busted").
-
-#### Link to play: https://cpsc-8710-teamproject.github.io/BlackJackGame/
 
 ![Blackjack-card-values](https://user-images.githubusercontent.com/76790227/147416588-86b629f5-212d-4019-a412-82088b4cf690.png)
 
@@ -61,6 +59,10 @@ No installation required. Just hit the website URL and you’re good to go!
 ### Troubleshooting
 
 If you encounter any issues while playing, please ensure that your browser settings [allow JavaScript](https://support.google.com/adsense/answer/12654?hl=en) and [allow cookies](https://lonewolf.my.site.com/s/article/ZF-Enable-Cookies-in-Your-Web-Browser#:~:text=Use%20the%20more%20options%20menu,select%20Don't%20block%20cookies.).
+
+### Acknowledgments
+
+Big shoutout to [Clever Programmer](https://www.youtube.com/@CleverProgrammer) for the awesome JS courses and [Olivier](https://github.com/Oli8) for the game inspiration!
 
 ### Contact Info
 
