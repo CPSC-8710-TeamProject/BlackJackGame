@@ -29,12 +29,25 @@ document.addEventListener("keydown", function(event) {
     }
 });
 
+
 document.addEventListener("keyup", function(event) {
     if (event.key === "i" || event.key === "I") {
         // Display the popup
         popup.style.display = "none";
     }
 });
+
+//Add an event listener for onClick
+function rulesPopUp()
+{
+    popup.style.display = "block";
+        
+}
+
+function rulesHide(){
+    popup.style.display = "none";
+}
+
 
 function enterTheGame() {
     window.location.href = "html/home.html";
