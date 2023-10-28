@@ -19,6 +19,23 @@ const namePopupContainer = document.getElementById("namePopupContainer");
 const nameInput = document.getElementById("nameInput");
 let userName = ""
 
+const popup = document.getElementById("rulepopupContainer");
+
+// Add an event listener to detect the "I" key press
+document.addEventListener("keydown", function(event) {
+    if (event.key === "i" || event.key === "I") {
+        // Display the popup
+        popup.style.display = "block";
+    }
+});
+
+document.addEventListener("keyup", function(event) {
+    if (event.key === "i" || event.key === "I") {
+        // Display the popup
+        popup.style.display = "none";
+    }
+});
+
 function enterTheGame() {
     window.location.href = "html/home.html";
     // namePopupContainer.style.display = "block";
