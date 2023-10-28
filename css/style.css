@@ -169,3 +169,44 @@ table{
     align-items: center;
     justify-content: center;
 }
+
+.tooltip-container {
+    position: relative;
+  }
+
+#instruction {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    cursor: pointer;
+    font-family: 'Lobster', cursive;
+    font-size: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+    margin-right: 170px;
+    border: 1px solid yellow; /* Circular border */
+    border-radius: 50%; /* Create a circular container */
+    width: 1.1em;
+    height: 1.08em;
+    display: flex;
+}
+
+
+  
+  .tooltip {
+    position: absolute;
+    background-color: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  #instruction :hover + .tooltip {
+    display: block;
+  }
