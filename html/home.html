@@ -32,6 +32,28 @@
                 <h2>Dealer: <span id="dealerscore">0</span></h2>
             </div>
         </div>
+
+        <div class="rule-popup-container" id="rulepopupContainer">
+            <div class="rule-popup-content" style="background-image: url('static/table.jpg');">
+                
+                <h2 style="color: yellow; background-color: black;">Game Rules</h2>
+                <p >
+                    To make the game more engaging, we have made small modifications to the original Blackjack rules
+
+                    <ul>
+                        <li>The goal of Blackjack is to beat the dealer's hand without going over 21.</li>
+                        <li>Face cards are worth 10. Aces are worth 1 or 11, whichever makes a better hand.</li>
+                        <li>You go first. You click the 'Hit' button until you make a 'Stand'. Then it is the Dealer's turn.</li>
+                        <li>To 'Hit' is to ask for another card.</li>
+                        <li>To 'Stand' is to hold your total and end your turn.</li>
+                        <li>If you go over 21 you bust, and the dealer wins, provided he doesn't bust as well (in which case it is a draw).</li>
+                        <li>If you select 'Deal' then you play next round with the dealer.</li>
+                        <li>If you wish to restart the game with a fresh scorecard, simply refresh the page.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
         <div class="row2">
             <div class="buttons">
                 <button class="btn-lg btn-primary" id="hit" onmouseover="tink.play()" > Hit </button> 
